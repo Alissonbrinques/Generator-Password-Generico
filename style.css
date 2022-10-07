@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Chathura&family=Red+Hat+Text:wght@500;600&family=Roboto:wght@400;500&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html{
+    --bg:#efefef;
+    --color-headings:#FFDE69;
+    --bg-panel:#E80505;
+    --bg-select:#161d24;
+    --bg-input-button:#2A5175;
+    --color-text:#efefef;
+    --color-text-two:#1d1d1d;
+
+ 
+}
+body{
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg);
+}
+
+.container-generico{
+    width: 390px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--bg);
+    
+}
+
+/*header*/
+.header-generico{
+    background-color: var(--color-headings);
+    width: 90%;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header-generico > h3{
+    margin-left: 24px;
+    font-family: 'roboto';
+    font-size: 16px;
+    font-weight: 100;
+}
+.header-generico > h1 > span{
+    font-family: 'Red Hat Text';
+    font-size: 60px;
+    font-weight: 700;
+}
+.header-generico > h1{
+    margin-top: -30px;
+    font-family: 'Roboto';
+    font-size: 40px;
+    font-weight: 500;
+}
+
+label{
+    width: 90%;
+    height: 80px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color:var(--color-text);
+    background-color:var(--bg-panel);
+
+    font-family: 'roboto';
+    font-size: 14px;
+}
+
+.inputs-generico{
+
+    width: 90%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+
+}    
+
+select{
+
+    width: 100%;
+    height: 40px;
+    border: none;
+    font-family: 'roboto';
+    font-size: 16px;
+    color:var(--color-text);
+    background: var(--bg-select);
+    text-align: center;
+    font-weight: bold;
+    border-radius:6px;
+}
+
+input{
+
+    width: 100%;
+    height: 40px;
+    border-radius: 6px;
+    border: none;
+    background-color: var(--bg-input-button);
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 20px; 
+
+    color:var(--color-text);
+    cursor: pointer;
+    
+}
+
+input:hover{
+    background-color: var(--color-text-two);
+    
+}
+
+.senha-gerada{
+    width: 90%;
+    height: 50px;
+
+    font-family: 'Chathura';
+    font-weight: 900;
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:var(--color-text);
+    
+}
